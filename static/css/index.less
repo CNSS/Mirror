@@ -1,0 +1,42 @@
+html, body{
+    width: 100%;
+}
+@maincolor: #002F56;
+header{
+    @sub_color: rgba(255, 255, 255, 0.7);
+    // height: 40vh;
+    width: 100%;
+    background-color: @maincolor;
+    text-align: center;
+    color: white;
+    h1{
+        font-size: 5em;
+        font-family: 'Dosis', sans-serif !important;
+        font-family: monospace;
+        font-weight: 200;
+        background-clip: text;
+        background-color: transparent;
+    }
+    h3, h2{
+        color: @sub_color;
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: 300;
+    }
+    a{
+        color: @sub_color;
+        display: inline-block;
+        border-bottom: dotted 1px transparent;
+        &:hover{
+            color: @sub_color;
+            border-bottom: dotted 1px @sub_color;
+        }
+    }
+    padding: 3rem 0 4rem 0;
+    margin-bottom: 3rem;
+}
+h4.ribbon{
+    font-size: 1.2em !important;
+    & + div{
+        margin-top: 1rem;
+    }
+}

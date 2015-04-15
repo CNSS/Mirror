@@ -1,12 +1,16 @@
+@import "prefixer.less";
+
 html, body{
     width: 100%;
 }
 @maincolor: #002F56;
+
 header{
     @sub_color: rgba(255, 255, 255, 0.7);
     // height: 40vh;
     width: 100%;
     background-color: @maincolor;
+    .transition(background-color 2s);
     text-align: center;
     color: white;
     h1{
@@ -30,6 +34,9 @@ header{
             color: @sub_color;
             border-bottom: dotted 1px @sub_color;
         }
+    }
+    &.active{
+        background-color: lighten(@maincolor, 15%);
     }
     padding: 3rem 0 4rem 0;
     margin-bottom: 3rem;

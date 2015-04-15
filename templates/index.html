@@ -9,7 +9,10 @@
         $(function(){
             $(".type").typed({
                 strings: ["just hack", "just hAck ^1000 4 fun."],
-                typeSpeed: 100
+                typeSpeed: 100,
+                callback:function(){
+                    $('header').addClass('active')
+                }
             });
         });
     </script>

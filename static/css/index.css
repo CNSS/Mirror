@@ -5,6 +5,11 @@ body {
 header {
   width: 100%;
   background-color: #002f56;
+  -webkit-transition: background-color 2s;
+  -moz-transition: background-color 2s;
+  -o-transition: background-color 2s;
+  -ms-transition: background-color 2s;
+  transition: background-color 2s;
   text-align: center;
   color: white;
   padding: 3rem 0 4rem 0;
@@ -32,6 +37,9 @@ header a {
 header a:hover {
   color: rgba(255, 255, 255, 0.7);
   border-bottom: dotted 1px rgba(255, 255, 255, 0.7);
+}
+header.active {
+  background-color: #0059a3;
 }
 h4.ribbon {
   font-size: 1.2em !important;

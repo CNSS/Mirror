@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <title>CNSS Mirror</title>
     <script src="{{url_for("static", filename="js/jquery.min.js")}}"></script>
+    <script src="{{url_for("static", filename="js/typed.min.js")}}"></script>
+    <script>
+        $(function(){
+            $(".type").typed({
+                strings: ["just hack", "just hAck ^1000 4 fun."],
+                typeSpeed: 100
+            });
+        });
+    </script>
     <link rel="stylesheet" href="{{url_for("static", filename="css/semantic.min.css")}}">
     <link href='http://fonts.googleapis.com/css?family=Dosis:200|Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{url_for("static", filename="css/index.css")}}">
 </head>
 <body>
-    <!-- <div class="zoomed masthead center aligned segment"> -->
     <header>
-        <h1 class="heading">>_ just hAck 4 fun.</h1>
+        <h1 class="heading">>>> <span class="type"></span></h1>
         <h2>Welcome to the UESTC open source mirror</h2>
         <h3>Provied by <a href="https://cnssuestc.org">Cohesion Network Security Studio</a></h3>
     </header>
@@ -53,9 +61,6 @@
                 </div>
             </div>
         </div>
-
-        
     </div>
-    
 </body>
 </html>
